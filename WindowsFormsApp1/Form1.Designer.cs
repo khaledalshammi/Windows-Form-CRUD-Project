@@ -47,6 +47,7 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label5.Location = new System.Drawing.Point(477, 389);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 13);
@@ -57,6 +58,8 @@
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label6.Location = new System.Drawing.Point(477, 420);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 13);
@@ -67,7 +70,7 @@
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.label7.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label7.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label7.Location = new System.Drawing.Point(234, 389);
             this.label7.Name = "label7";
@@ -79,6 +82,7 @@
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.label8.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label8.Location = new System.Drawing.Point(234, 423);
             this.label8.Name = "label8";
@@ -89,6 +93,7 @@
             // department
             // 
             this.department.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.department.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.department.FormattingEnabled = true;
             this.department.Location = new System.Drawing.Point(302, 420);
             this.department.Name = "department";
@@ -98,6 +103,7 @@
             // fullname
             // 
             this.fullname.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.fullname.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.fullname.Location = new System.Drawing.Point(540, 387);
             this.fullname.Name = "fullname";
             this.fullname.Size = new System.Drawing.Size(144, 20);
@@ -106,6 +112,7 @@
             // email
             // 
             this.email.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.email.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.email.Location = new System.Drawing.Point(540, 418);
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(144, 20);
@@ -114,7 +121,7 @@
             // add
             // 
             this.add.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.add.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.add.BackColor = System.Drawing.Color.Pink;
             this.add.Location = new System.Drawing.Point(341, 333);
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(73, 31);
@@ -126,7 +133,7 @@
             // delete
             // 
             this.delete.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.delete.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.delete.BackColor = System.Drawing.Color.Pink;
             this.delete.Location = new System.Drawing.Point(419, 333);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(73, 31);
@@ -138,7 +145,7 @@
             // update
             // 
             this.update.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.update.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.update.BackColor = System.Drawing.Color.Pink;
             this.update.ForeColor = System.Drawing.SystemColors.WindowText;
             this.update.Location = new System.Drawing.Point(497, 333);
             this.update.Name = "update";
@@ -161,6 +168,11 @@
             // birthdate
             // 
             this.birthdate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.birthdate.CalendarForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.birthdate.CalendarMonthBackground = System.Drawing.SystemColors.ControlLight;
+            this.birthdate.CalendarTitleBackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.birthdate.CalendarTitleForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.birthdate.CalendarTrailingForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.birthdate.Location = new System.Drawing.Point(302, 387);
             this.birthdate.Name = "birthdate";
             this.birthdate.Size = new System.Drawing.Size(144, 20);

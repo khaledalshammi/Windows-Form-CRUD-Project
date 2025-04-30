@@ -4,6 +4,7 @@ using System.Data.Entity;
 using System.Windows.Forms;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Drawing;
 
 namespace WindowsFormsApp1
 {
@@ -16,8 +17,12 @@ namespace WindowsFormsApp1
             db = new UserProfileDBContext();
             this.dataGridView2.CellClick += dataGridView2_CellClick;
             this.dataGridView2.Click += dataGridView2_Click;
-            //this.dataGridView2.AutoGenerateColumns = false;
             this.Click += Form1_Click;
+
+            dataGridView2.DefaultCellStyle.BackColor = Color.SkyBlue;
+            dataGridView2.DefaultCellStyle.ForeColor = Color.Black;
+            dataGridView2.DefaultCellStyle.SelectionBackColor = Color.White;
+            dataGridView2.DefaultCellStyle.SelectionForeColor = Color.Black;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -248,5 +253,6 @@ namespace WindowsFormsApp1
                 dataGridView2.Columns["FullName"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             }
         }
+
     }
 }
