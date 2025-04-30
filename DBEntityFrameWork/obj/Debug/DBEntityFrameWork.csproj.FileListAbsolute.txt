@@ -1,0 +1,14 @@
+C:\Users\khalo\OneDrive\سطح المكتب\asp.net\skinet\WindowsFormsApp1\DBEntityFrameWork\obj\Debug\DBEntityFrameWork.csproj.AssemblyReference.cache
+C:\Users\khalo\OneDrive\سطح المكتب\asp.net\skinet\WindowsFormsApp1\DBEntityFrameWork\obj\Debug\DBEntityFrameWork.csproj.CoreCompileInputs.cache
+C:\Users\khalo\OneDrive\سطح المكتب\asp.net\skinet\WindowsFormsApp1\DBEntityFrameWork\bin\Debug\DBEntityFrameWork.dll.config
+C:\Users\khalo\OneDrive\سطح المكتب\asp.net\skinet\WindowsFormsApp1\DBEntityFrameWork\bin\Debug\DBEntityFrameWork.dll
+C:\Users\khalo\OneDrive\سطح المكتب\asp.net\skinet\WindowsFormsApp1\DBEntityFrameWork\bin\Debug\DBEntityFrameWork.pdb
+C:\Users\khalo\OneDrive\سطح المكتب\asp.net\skinet\WindowsFormsApp1\DBEntityFrameWork\bin\Debug\EntityFramework.dll
+C:\Users\khalo\OneDrive\سطح المكتب\asp.net\skinet\WindowsFormsApp1\DBEntityFrameWork\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\khalo\OneDrive\سطح المكتب\asp.net\skinet\WindowsFormsApp1\DBEntityFrameWork\bin\Debug\EntityFramework.xml
+C:\Users\khalo\OneDrive\سطح المكتب\asp.net\skinet\WindowsFormsApp1\DBEntityFrameWork\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\khalo\OneDrive\سطح المكتب\asp.net\skinet\WindowsFormsApp1\DBEntityFrameWork\obj\Debug\DBEntityFrameWork.csproj.CopyComplete
+C:\Users\khalo\OneDrive\سطح المكتب\asp.net\skinet\WindowsFormsApp1\DBEntityFrameWork\obj\Debug\DBEntityFrameWork.dll
+C:\Users\khalo\OneDrive\سطح المكتب\asp.net\skinet\WindowsFormsApp1\DBEntityFrameWork\obj\Debug\DBEntityFrameWork.pdb
+C:\Users\khalo\OneDrive\سطح المكتب\asp.net\skinet\WindowsFormsApp1\DBEntityFrameWork\obj\Debug\DBEntityFrameWork.Migrations.initialDataBase.resources
+C:\Users\khalo\OneDrive\سطح المكتب\asp.net\skinet\WindowsFormsApp1\DBEntityFrameWork\obj\Debug\DBEntityFrameWork.csproj.GenerateResource.cache
