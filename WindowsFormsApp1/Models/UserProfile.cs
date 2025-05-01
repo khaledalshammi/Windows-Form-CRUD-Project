@@ -14,7 +14,7 @@ namespace WindowsFormsApp1
         [Required, Display(Name = "Full Name")] //MaxLength(50)
         public string FullName { get; set; }
         [StringLength(50, ErrorMessage = "Email cannot exceed 50 characters.")]
-        [EmailAddress, Required, ]
+        [EmailAddress, Required]
         public string Email { get; set; }
         [BirthDateNotInFuture, Display(Name = "Birth Date")]
         public DateTime BirthDate { get; set; }

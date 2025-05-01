@@ -130,10 +130,18 @@ namespace WindowsFormsApp1
             }
             int userId = (int)dataGridView2.CurrentRow.Cells["UserID"].Value;
             UserProfile user = db.UserProfiles.Find(userId);
+
+            var actualUser = new UserProfile();
+            actualUser.FullName = user.FullName;
+            actualUser.Email = user.Email;
+            actualUser.BirthDate = user.BirthDate;
+            actualUser.Department = user.Department;
+
             if (user != null)
             {
                 string fullnameText = fullname.Text.Trim();
                 string emailText = email.Text.Trim();
+
                 DateTime birthdateText = birthdate.Value;
 
                 int deptId = (int)department.SelectedValue;
@@ -145,13 +153,20 @@ namespace WindowsFormsApp1
                     user.Email = emailText;
                     user.BirthDate = birthdateText;
                     user.Department = departmentTable;
-                    if (ValidateModelData(user, db))
+                    if (ValidateModelData(user, db, userId))
                     {
                         db.SaveChanges();
                         MessageBox.Show("Data is updated successfully");
                         LoadUserProfiles();
                         ClearFormFields();
                         dataGridView2.ClearSelection();
+                    }
+                    else
+                    {
+                        user.FullName = actualUser.FullName;
+                        user.Email = actualUser.Email;
+                        user.BirthDate = actualUser.BirthDate;
+                        user.Department = actualUser.Department;
                     }
                 }
                 else
@@ -216,7 +231,7 @@ namespace WindowsFormsApp1
             return new EmailAddressAttribute().IsValid(email);
         }
         */
-        public bool ValidateModelData(UserProfile newUser, UserProfileDBContext db)
+        public bool ValidateModelData(UserProfile newUser, UserProfileDBContext db, int? id = null)
         {
             var context = new ValidationContext(newUser, null, null);
             var results = new List<ValidationResult>();
@@ -227,6 +242,11 @@ namespace WindowsFormsApp1
             {
                 string errorMessages = string.Join("\n", results.Select(r => r.ErrorMessage));
                 MessageBox.Show("Validation failed:\n" + errorMessages);
+                return false;
+            }
+            if (UniquenessOfEmail(newUser.Email, id) == false)
+            {
+                MessageBox.Show("Email is already exist");
                 return false;
             }
             return true;
@@ -253,6 +273,37 @@ namespace WindowsFormsApp1
                 dataGridView2.Columns["FullName"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             }
         }
-
+        public bool UniquenessOfEmail(string email, int? id = null)
+        {
+            if (id != null)
+            {
+                var cuurent_user = db.UserProfiles.FirstOrDefault(e => e.Email == email && e.UserID == id);
+                if (cuurent_user != null)
+                {
+                    return true;
+                }
+                var users = db.UserProfiles.FirstOrDefault(e => e.Email == email);
+                if (users != null)
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+            else
+            {
+                var users = db.UserProfiles.FirstOrDefault(e => e.Email == email);
+                if (users != null)
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+        }
     }
 }
